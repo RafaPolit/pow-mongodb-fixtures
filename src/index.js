@@ -156,7 +156,8 @@ Loader.prototype.clear = function(collectionNames, cb) {
                 parts = fullName.split('.');
 
             //Remove DB name
-            parts.shift();
+            // No longer necessary as of mongodb 1.4.31
+            // parts.shift();
 
             //Skip system collections
             if (parts[0] == 'system' || parts[0] == 'local') return;
