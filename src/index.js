@@ -209,7 +209,7 @@ Loader.prototype.clearAllAndLoad = function(fixtures, cb) {
     self.load(fixtures, function(err) {
       cb(err);
     });
-	});
+  });
 };
 
 
